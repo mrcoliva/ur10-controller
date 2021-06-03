@@ -1,6 +1,6 @@
 # UR10 Robot Controller in ROS
 
-### An adaptive controller for simoultaneous trajectory following, gaze control, and collision avoidance with moving obstacles.
+### An adaptive controller for simultaneous trajectory following, gaze control, and collision avoidance with moving obstacles.
 
 The task of the robot has three components:
 1. move to a starting position in joint space
