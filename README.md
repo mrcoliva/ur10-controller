@@ -16,7 +16,7 @@ To achive this behaviuor, three control laws are applied:
 For a more detailed theoretical introduction and documentation of the system, see the report.
 
 #### Trajectory following and gaze control
-https://user-images.githubusercontent.com/11507299/120660458-a4d53f80-c487-11eb-970d-4877951838d9.mp4
+https://user-images.githubusercontent.com/11507299/120662500-7fe1cc00-c489-11eb-9984-186d0c105838.mp4
 
 #### Simoultaneous collision avoidance with up to three mobing obstacles
 https://user-images.githubusercontent.com/11507299/120660688-de0daf80-c487-11eb-9f90-0c6a716abd1f.mp4
