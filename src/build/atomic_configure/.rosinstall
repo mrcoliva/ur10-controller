@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/marco/ros/workspaces/final_project/src/build/devel/setup.sh

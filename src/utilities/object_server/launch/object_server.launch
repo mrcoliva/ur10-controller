@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node name="object_server_node" pkg="object_server" type="object_server_node" output="screen">
+    <rosparam file="$(find object_server)/launch/configs/parms.yaml" command="load" />
+  </node>
+
+</launch>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://ros.org/wiki/xacro">
+
+	<!--Common definitions -->
+	<xacro:include filename="$(find tom_description)/urdf/common.xacro"/>
+
+	<!--Lacquey gripper definitions -->
+	<xacro:include filename="$(find tom_description)/urdf/lacquey/lacquey.urdf.xacro"/>
+
+	<xacro:property name="limit_0_low" value="-${M_PI/4}" />
+	<xacro:property name="limit_1_up" value="${M_PI/180*67}" />
+
+	<xacro:macro name="tom_gripper_v0" params="right_gripper">
+		<xacro:unless value="${right_gripper}">
+			<xacro:jacquey prefix="l_gripper_"/>
+			<joint name="l_gripper_base_joint" type="fixed">
+		  	<parent link="l_hand_base_adapter_link"/>
+		  	<child link="l_gripper_base_link"/>
+		  	<origin xyz="0 0 0" rpy="0 0 ${-M_PI/2}"/>
+			</joint>
+		</xacro:unless>
+		
+		<xacro:if value="${right_gripper}">
+			<xacro:jacquey prefix="r_gripper_"/>
+			<joint name="r_gripper_base_joint" type="fixed">
+			  	<parent link="r_hand_base_adapter_link"/>
+			  	<child link="r_gripper_base_link"/>
+			  	<origin xyz="0 0 0" rpy="0 0 ${M_PI/2+M_PI}"/>
+  			</joint>
+		</xacro:if>
+
+	</xacro:macro>
+</robot>

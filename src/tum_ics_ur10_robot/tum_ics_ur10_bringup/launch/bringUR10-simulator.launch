@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="use_rviz" default="true" />
+  <arg name="load_robot_description" default="true"/>
+  <arg name="joint_limited" default="false"/>
+  <arg name="robot_prefix" default="ursa_"/>
+  <arg name="world" default="empty_box"/>
+  <arg name="gui" default="false"/>
+  <arg name="list" default="[$(arg robot_prefix)joint_states]"/>
+
+  <!-- Add a base to world transformation -->
+  <node pkg="tf" type="static_transform_publisher" name="base_wrt_world" args="0 0 0 0 0 0 1 world base_link 1000" />
+  <node pkg="tf" type="static_transform_publisher" name="map_wrt_world" args="0 0 0 0 0 0 1 world map 1000" />
+
+  <!-- Add a Floor map -->
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find tum_ics_ur10_bringup)/launch/map_conf/$(arg world).yaml" output="screen">
+		<param name="frame_id" value="map"/>
+	</node>
+
+  <!-- The name of the parameter under which the URDF is loaded -->
+  <arg name="robot_description" default="robot_description"/>
+
+  <!-- Load universal robot description format (URDF) -->
+  <group if="$(arg load_robot_description)">
+      <param name="$(arg robot_description)" command="$(find xacro)/xacro --inorder '$(find tum_ics_ur10_description)/urdf/ur10_robot.urdf.xacro' prefix:=$(arg robot_prefix) limited:=$(arg joint_limited)" />
+  </group>
+
+  <!--include file="$(find tum_ics_ur10_description)/robots/upload_ur10.launch" /-->
+  <!-- loading the Park position as TOM zero position -->
+  <rosparam command="load" file="$(find tum_ics_ur10_description)/robots/$(arg robot_prefix)ur10_zeros.yaml"/>
+
+  <node name="joint_state_publisher_ur10" pkg="joint_state_publisher" type="joint_state_publisher" >
+    <param name="use_gui" value="$(arg gui)"/>
+    <param name="rate" value="100.0"/>
+    <!--remap from="/joint_states" to="/joint_cmd"/-->
+    <rosparam unless="$(arg gui)" param="source_list" subst_value="True">$(arg list)</rosparam>
+  </node>
+
+  <node name="robot_state_publisher_ur10" pkg="robot_state_publisher" type="robot_state_publisher">
+    <param name="publish_frequency" value="100.0" />
+  </node>
+
+  <!-- launch rviz with config/rviz_camera_stream.rviz -->
+  <node pkg="rviz" type="rviz" name="rviz"
+      args="-d $(find rviz_camera_stream)/config/rviz_camera_stream.rviz"
+      if="$(arg use_rviz)" />
+
+  <group ns="camera1">
+  <node pkg="tf" type="static_transform_publisher" name="camera_broadcaster"
+      args="0.0 0.0 0.0 0 0.7071068 0 0.7071068 ursa_ee_link camera1 100" />
+  <node name="camera_info" pkg="rostopic" type="rostopic"
+      args="pub camera_info sensor_msgs/CameraInfo
+     '{header: {seq: 0, stamp: {secs: 0, nsecs: 0}, frame_id: 'camera1'},
+      height: 480, width: 640, distortion_model: 'plumb_bob',
+      D: [0],
+      K: [500.0, 0.0, 320, 0.0, 500.0, 240.0, 0.0, 0.0, 1.0],
+      R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0],
+      P: [500.0, 0.0, 320, 0.0, 0.0, 500, 240, 0.0, 0.0, 0.0, 1.0, 0.0],
+      binning_x: 0, binning_y: 0,
+      roi: {x_offset: 0, y_offset: 0, height: 480, width: 640, do_rectify: false}}' -r 2"
+      output="screen"/>
+  </group>
+
+  <group ns="rviz1/camera1/image">
+  <rosparam param="disable_pub_plugins">
+    - 'image_transport/compressed'
+    - 'image_transport/compressedDepth'
+    - 'image_transport/theora'
+  </rosparam>
+  </group>
+
+  <!-- simulate camera image -->
+  <node name="visual_perception_node" pkg="visual_perception" type="visual_perception_node"/>
+  
+  <!-- simulate objects -->
+  <include file="$(find object_server)/launch/object_server.launch" />
+
+</launch>

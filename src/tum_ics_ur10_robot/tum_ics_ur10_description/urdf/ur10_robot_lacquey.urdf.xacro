@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro"
+       name="ur10" >
+
+  <!-- common stuff -->
+  <xacro:include filename="$(find tum_ics_ur10_description)/urdf/gazebo.urdf.xacro" />
+  <xacro:include filename="$(find tum_ics_ur10_description)/urdf/common.xacro" />
+
+  <!-- ur10 -->
+  <xacro:include filename="$(find tum_ics_ur10_description)/urdf/ur10.urdf.xacro" />
+
+  <!-- arm -->
+  <xacro:ur10_robot prefix="$(arg prefix)" joint_limited="$(arg limited)"/>
+
+  <link name="world" />
+
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "$(arg prefix)base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+<!-- This is the JR3 adapter -->
+  <link name="$(arg prefix)hand_base_adapter_link">
+  <visual>
+     <origin xyz="0 0 -${adapter_z_offset}" rpy="${M_PI/2} 0 ${M_PI/2}" />
+      <geometry>
+       <mesh filename="package://tum_ics_ur10_description/meshes/arm/mountc.dae"/>
+      </geometry>
+  </visual>
+  <collision>
+         <origin xyz="0 0 ${-jr3_hight/2}" rpy="0 0 0" />
+       <geometry>
+         <cylinder length="${jr3_hight}" radius="${jr3_radius}" />
+       </geometry>
+     </collision>
+ </link>
+ <joint name="$(arg prefix)hand_base_adapter_joint" type="fixed">
+     <parent link="$(arg prefix)ee_link"/>
+     <child link="$(arg prefix)hand_base_adapter_link"/>
+     <origin xyz="${adapter_joint_x_offset} 0 0" rpy="${M_PI/2} 2.356 ${M_PI/2}"/>
+ </joint>
+
+<!--Lacquey gripper definitions -->
+    <xacro:include filename="$(find tum_ics_ur10_description)/urdf/lacquey/lacquey.urdf.xacro"/>
+
+    <!--xacro:property name="limit_0_low" value="-${M_PI/4}" />
+    <xacro:property name="limit_1_up" value="${M_PI/180*67}" /-->
+
+    <xacro:lacquey prefix="$(arg prefix)gripper_"/>
+        <joint name="$(arg prefix)gripper_base_joint" type="fixed">
+            <parent link="$(arg prefix)hand_base_adapter_link"/>
+            <child link="$(arg prefix)gripper_base_link"/>
+            <origin xyz="0 0 -0.04" rpy="0 0 -${M_PI/4}"/>
+        </joint>
+
+
+
+</robot>

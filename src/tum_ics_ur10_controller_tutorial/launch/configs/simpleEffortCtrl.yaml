@@ -1,0 +1,40 @@
+# Parameters for the default controller
+simple_effort_ctrl: 
+  
+  # joint space gains
+  joint_space_gains_p: [5, 8, 8, 10, 1, 1]
+  joint_space_gains_d: [100, 75, 75, 15, 15, 5]
+ 
+  # cartesian space gains
+  task_space_gains_p: [80, 50, 50, 25, 15, 3]
+  task_space_gains_i: [0.1, 0.025, 0.025, 1, 1, 0.0001]
+  task_space_gains_d: [280, 200, 200, 25, 15, 5]
+
+  # impendance controller parameters for obstacle avoidance
+  obstacleInfluenceRadius: 0.325
+
+  # gains of the repulsive obstacle potentials per joint
+  force_control_gains: [100, 4000, 100, 2000, 1500, 100]
+
+  # Desired joint angles in deg of the initial joint space motion
+  joint_space_goal: [20.0, -90.0, -90.0, -90.0, 90.0, 0.0]
+  joint_trajectory_duration: 6.0
+
+  # affects the duration of position interpolation depending on the distance between
+  # the current position and the desired position (on the circular trajectory)
+  # with duration = trajectoryDurationErrorGain * positionError
+  # -> higher gain leads to slower motion
+  trajectoryDurationErrorGain: 7
+
+  # the minimum angular error between current and target orientation for interpolation
+  # if the error is smaller than this, the robot does not interpolate but jump directly
+  slerpAngularErrorThreshold: 0.15
+
+  # affects the duration of orientation interpolation depending on the angular error
+  # with: duration = slerpDurationErrorGain * angularError
+  slerpDurationErrorGain: 2.5
+
+  # circular trajectory
+  circularTrajectoryAnchorPosition: [0.65, 0.08, 0.5] # (x,y,z)-coordinates
+  circularTrajectoryRadius: 0.12
+  circularTrajectoryPeriod: 15

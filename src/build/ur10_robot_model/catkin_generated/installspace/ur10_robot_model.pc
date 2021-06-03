@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: ur10_robot_model
+Description: Description of ur10_robot_model
+Version: 0.0.0
+Cflags: -I${prefix}/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib -lur10_robot_model
+Requires: ow_core roscpp tf

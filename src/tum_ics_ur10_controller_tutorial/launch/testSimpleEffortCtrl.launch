@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- ur10 settings -->
+  <arg name="CONFIG_FILE_PATH" default="$(find tum_ics_ur10_controller_tutorial)/launch/configs/configUR10.ini"/>
+  <rosparam file="$(find ur10_robot_model)/launch/configs/ur10_model.yaml" command="load" />
+
+  <!-- the controller -->
+  <node name="testSimpleEffortCtrl" pkg="tum_ics_ur10_controller_tutorial" type="testSimpleEffortCtrl" args="$(arg CONFIG_FILE_PATH)" output="screen">
+    <!-- internal parameter --> 
+    <rosparam file="$(find tum_ics_ur_robot_controllers)/launch/configs/pidInt.yaml" command="load" />
+    <!-- controller parameter --> 
+    <rosparam file="$(find tum_ics_ur10_controller_tutorial)/launch/configs/simpleEffortCtrl.yaml" command="load" />
+  </node>
+
+</launch>

@@ -1,0 +1,11 @@
+# Gains for the Proportional-Derivative Joint Space Controller
+# P and D gains for each axis.
+simple_effort_ctrl: 
+ #proportional [50, 750, 750, 150, 40, 30]
+ gains_p: [50, 612.71801, 612.71801, 150, 40, 5]
+ 
+ #derivative [90, 26, 26, 34, 15, 3]
+ gains_d: [100, 75, 75, 73, 15, 5]
+
+ # Desired position in deg [90, 90, 90, 90, 90, 90, 10.0] [130,-70, 45, -150, -80, 15, 5.0]
+ goal: [0, 0, 0, 0, 0, 0, 0]

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: tum_ics_ur10_controller_tutorial
+Description: Description of tum_ics_ur10_controller_tutorial
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lmy_robot_control_lli
+Requires: tum_ics_ur_robot_msgs roscpp rospy sensor_msgs std_msgs tf tf_conversions visualization_msgs object_msgs tum_ics_ur_robot_lli

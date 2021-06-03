@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://ros.org/wiki/xacro">
+
+	<!--Common definitions -->
+	<xacro:include filename="$(find tum_ics_ur10_description)/urdf/common.xacro"/>
+
+	<xacro:property name="limit_0_low" value="-${M_PI/4}" />
+	<xacro:property name="limit_1_up" value="${M_PI/180*67}" />
+
+	<xacro:macro name="lacquey" params="prefix">
+		<!-- the bumper ring -->
+		<link name="${prefix}base_link">
+		 <visual>
+			<origin xyz="-0.065 -0.065 0.003" rpy="0 0 0" />
+			 <geometry>
+			  <mesh filename="package://tum_ics_ur10_description/meshes/lacquey/Lacquey_BumperRing_2.STL" scale="0.001 0.001 0.001"/>    
+			 </geometry>
+		 </visual>
+		 
+		 <collision>
+            <origin xyz="0 0 0.04" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.08" radius="0.07"/>
+            </geometry>
+         </collision>
+         
+         <inertial>
+            <origin xyz="0 0 0.04" rpy="0 0 0" />
+            <mass value="0.5"/>
+            <inertia  ixx="0.00001" ixy = "0"     ixz = "0"
+                                    iyy="0.00001" iyz = "0"
+                                                  izz="0.00001"/>
+        </inertial>
+        
+		</link>
+
+		<link name="${prefix}palm_link">
+		 <visual>
+			<origin xyz="-0.046 -0.040 0" rpy="${M_PI/2} 0 ${M_PI/2}" />
+			 <geometry>
+			  <mesh filename="package://tum_ics_ur10_description/meshes/lacquey/Lacquey_Palm.STL" scale="0.001 0.001 0.001"/>    
+			 </geometry>
+		  	 <material name="LightGrey">
+              <color rgba="0.7 0.7 0.7 1.0"/>
+          	 </material>
+		 </visual>
+		 
+		 <collision>
+            <origin xyz="0 0 0.04" rpy="0 0 0" />
+            <geometry>
+                <box size="0.1 0.1 0.08"/>
+            </geometry>
+         </collision>
+         
+         <inertial>
+            <origin xyz="0 0 0.04" rpy="0 0 0" />
+            <mass value="0.15"/>
+            <inertia  ixx="0.00001" ixy = "0"     ixz = "0"
+                                    iyy="0.00001" iyz = "0"
+                                                  izz="0.00001"/>
+        </inertial>
+		</link>
+		
+		<joint name="${prefix}palm_joint" type="fixed">
+		  	<parent link="${prefix}base_link"/>
+		  	<child link="${prefix}palm_link"/>
+		  	<origin xyz="0 0 0" rpy="0 0 0"/>
+		</joint>
+
+		<!-- left finger -->
+		<link name="${prefix}left_finger_link">
+		 <visual>
+			<origin xyz="0.0115 -0.005 -0.010" rpy="${M_PI/2} 0 ${M_PI}" />
+			 <geometry>
+			  <mesh filename="package://tum_ics_ur10_description/meshes/lacquey/Lacquey_Left_Finger.STL" scale="0.001 0.001 0.001"/>    
+			 </geometry>
+		 </visual>
+		 
+		 <collision>
+            <origin xyz="0 0.01 0.03" rpy="0 0 0" />
+            <geometry>
+                <box size="0.01 0.03 0.037"/>
+            </geometry>
+         </collision>
+         
+         <inertial>
+            <origin xyz="0 0 0.04" rpy="0 0 0" />
+            <mass value="0.05"/>
+            <inertia  ixx="0.000001" ixy = "0"     ixz = "0"
+                                    iyy="0.000001" iyz = "0"
+                                                  izz="0.000001"/>
+        </inertial>
+		</link>
+		
+		<joint name="${prefix}left_finger_joint" type="revolute">
+			<axis xyz="0 -1 0"/>
+			<limit effort="0" velocity="0" lower="0" upper="${limit_1_up}" />
+		  	<parent link="${prefix}left_finger_base_link"/>
+		  	<child link="${prefix}left_finger_link"/>
+		  	<origin xyz="0 0 0.054" rpy="0 0 0"/>
+		</joint>
+		
+		<link name="${prefix}left_finger_base_link">
+		  <visual>
+			<origin xyz="0.018 -0.0075 -0.005" rpy="${M_PI/2} 0 ${M_PI}" />
+			 <geometry>
+			  <mesh filename="package://tum_ics_ur10_description/meshes/lacquey/Lacquey_proxph.STL" scale="0.001 0.001 0.001"/>    
+			 </geometry>
+			<material name="LightGrey">
+          		<color rgba="0.7 0.7 0.7 1.0"/>
+          	</material>
+		 </visual>
+		 
+		 <collision>
+            <origin xyz="0 0 0.03" rpy="0 0 0" />
+            <geometry>
+                <box size="0.01 0.02 0.045"/>
+            </geometry>
+         </collision>
+         
+         <inertial>
+            <origin xyz="0 0 0.04" rpy="0 0 0" />
+            <mass value="0.05"/>
+            <inertia  ixx="0.000001" ixy = "0"     ixz = "0"
+                                    iyy="0.000001" iyz = "0"
+                                                  izz="0.000001"/>
+        </inertial>
+		</link>
+		
+		<joint name="${prefix}left_finger_base_joint" type="revolute">
+			<axis xyz="0 -1 0"/>
+			<limit effort="0" velocity="0" lower="${limit_0_low}" upper="0" />
+		  	<parent link="${prefix}base_link"/>
+		  	<child link="${prefix}left_finger_base_link"/>
+		  	<origin xyz="0.020 -0.028 0.072" rpy="0 0 ${-M_PI/2}"/>
+		</joint>
+
+		<!-- right finger -->
+		<link name="${prefix}right_finger_link">
+		 <visual>
+			<origin xyz="0.0115 -0.02571 -0.010" rpy="${M_PI/2} 0 ${M_PI}" />
+			 <geometry>
+			  <mesh filename="package://tum_ics_ur10_description/meshes/lacquey/Lacquey_Right_Finger.STL" scale="0.001 0.001 0.001"/>    
+			 </geometry>
+		 </visual>
+		 
+		 <collision>
+            <origin xyz="0 -0.01 0.03" rpy="0 0 0" />
+            <geometry>
+                <box size="0.01 0.03 0.037"/>
+            </geometry>
+         </collision>
+         
+         <inertial>
+            <origin xyz="0 0 0.04" rpy="0 0 0" />
+            <mass value="0.05"/>
+            <inertia  ixx="0.000001" ixy = "0"     ixz = "0"
+                                    iyy="0.000001" iyz = "0"
+                                                  izz="0.000001"/>
+        </inertial>
+		</link>
+		
+		<joint name="${prefix}right_finger_joint" type="revolute">
+			<axis xyz="0 -1 0"/>
+			<limit effort="0" velocity="0" lower="0" upper="${limit_1_up}" />
+		  	<parent link="${prefix}right_finger_base_link"/>
+		  	<child link="${prefix}right_finger_link"/>
+		  	<origin xyz="0 0 0.054" rpy="0 0 0"/>
+		</joint>
+		
+		<link name="${prefix}right_finger_base_link">
+		 <visual>
+			<origin xyz="0.018 -0.0075 -0.005" rpy="${M_PI/2} 0 ${M_PI}" />
+			 <geometry>
+			  <mesh filename="package://tum_ics_ur10_description/meshes/lacquey/Lacquey_proxph.STL" scale="0.001 0.001 0.001"/>    
+			 </geometry>
+			<material name="LightGrey">
+          		<color rgba="0.7 0.7 0.7 1.0"/>
+          	</material>
+		 </visual>
+		 
+		 <collision>
+            <origin xyz="0 0 0.03" rpy="0 0 0" />
+            <geometry>
+                <box size="0.01 0.02 0.045"/>
+            </geometry>
+         </collision>
+         
+         <inertial>
+            <origin xyz="0 0 0.04" rpy="0 0 0" />
+            <mass value="0.05"/>
+            <inertia  ixx="0.000001" ixy = "0"     ixz = "0"
+                                    iyy="0.000001" iyz = "0"
+                                                  izz="0.000001"/>
+        </inertial>
+		</link>
+		
+		<joint name="${prefix}right_finger_base_joint" type="revolute">
+			<axis xyz="0 -1 0"/>
+			<limit effort="0" velocity="0" lower="${limit_0_low}" upper="0" />
+		  	<parent link="${prefix}base_link"/>
+		  	<child link="${prefix}right_finger_base_link"/>
+		  	<origin xyz="-0.023 -0.028 0.072" rpy="0 0 ${-M_PI/2}"/>
+		</joint>
+
+		<!-- mid finger -->
+		<link name="${prefix}mid_finger_link">
+		 <visual>
+			<origin xyz="0.0115 -0.01386 -0.010" rpy="${M_PI/2} 0 ${M_PI}" />
+			 <geometry>
+			  <mesh filename="package://tum_ics_ur10_description/meshes/lacquey/Lacquey_Mid_Finger.STL" scale="0.001 0.001 0.001"/>    
+			 </geometry>
+		 </visual>
+		 
+		 <collision>
+            <origin xyz="0 0 0.03" rpy="0 0 0" />
+            <geometry>
+                <box size="0.01 0.03 0.037"/>
+            </geometry>
+         </collision>
+         
+         <inertial>
+            <origin xyz="0 0 0.04" rpy="0 0 0" />
+            <mass value="0.05"/>
+            <inertia  ixx="0.000001" ixy = "0"     ixz = "0"
+                                    iyy="0.000001" iyz = "0"
+                                                  izz="0.000001"/>
+        </inertial>
+		</link>
+		
+		<joint name="${prefix}mid_finger_joint" type="revolute">
+			<axis xyz="0 -1 0"/>
+			<limit effort="0" velocity="0" lower="0" upper="${limit_1_up}" />
+		  	<parent link="${prefix}mid_finger_base_link"/>
+		  	<child link="${prefix}mid_finger_link"/>
+		  	<origin xyz="0 0 0.054" rpy="0 0 0"/>
+		</joint>
+		
+		<link name="${prefix}mid_finger_base_link">
+		 <visual>
+			<origin xyz="0.018 -0.0075 -0.005" rpy="${M_PI/2} 0 ${M_PI}" />
+			 <geometry>
+			  <mesh filename="package://tum_ics_ur10_description/meshes/lacquey/Lacquey_proxph.STL" scale="0.001 0.001 0.001"/>    
+			 </geometry>
+			<material name="LightGrey">
+          		<color rgba="0.7 0.7 0.7 1.0"/>
+          	</material>
+		 </visual>
+		 
+		 <collision>
+            <origin xyz="0 0 0.03" rpy="0 0 0" />
+            <geometry>
+                <box size="0.01 0.02 0.045"/>
+            </geometry>
+         </collision>
+         
+         <inertial>
+            <origin xyz="0 0 0.04" rpy="0 0 0" />
+            <mass value="0.05"/>
+            <inertia  ixx="0.000001" ixy = "0"     ixz = "0"
+                                    iyy="0.000001" iyz = "0"
+                                                  izz="0.000001"/>
+        </inertial>
+		</link>
+		
+		<joint name="${prefix}mid_finger_base_joint" type="revolute">
+			<axis xyz="0 -1 0"/>
+			<limit effort="0" velocity="0" lower="${limit_0_low}" upper="0" />
+		  	<parent link="${prefix}base_link"/>
+		  	<child link="${prefix}mid_finger_base_link"/>
+		  	<origin xyz="0 0.028 0.072" rpy="0 0 ${M_PI/2}"/>
+		</joint>
+		
+	</xacro:macro>
+</robot>

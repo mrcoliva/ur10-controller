@@ -1,0 +1,8 @@
+prefix=/home/marco/ros/workspaces/final_project/src/build/devel
+
+Name: ur10_robot_model
+Description: Description of ur10_robot_model
+Version: 0.0.0
+Cflags: -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib -lur10_robot_model
+Requires: ow_core roscpp tf

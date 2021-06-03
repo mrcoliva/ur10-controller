@@ -1,0 +1,17 @@
+lib
+bin
+devel
+build
+install
+CMakeLists.txt.user
+CMakeLists.txt.old
+msg_gen
+srv_gen
+*.txt.user
+*.cfgc
+*.autosave
+*~
+ROS_NOBUILD
+.catkin_workspace
+.gitmodules
+CATKIN_IGNORE

@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/marco/ros/workspaces/final_project/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/marco/ros/workspaces/final_project/src/utilities/object_server/include/**",
+                "/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include/**",
+                "/home/marco/ros/workspaces/final_project/src/utilities/rviz_camera_stream/include/**",
+                "/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/include/**",
+                "/home/marco/ros/workspaces/final_project/src/utilities/visual_perception/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

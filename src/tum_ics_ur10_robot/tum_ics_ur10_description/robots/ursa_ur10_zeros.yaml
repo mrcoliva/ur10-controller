@@ -1,0 +1,9 @@
+zeros:
+  ursa_shoulder_pan_joint: 0
+  ursa_shoulder_lift_joint: -1.57
+  ursa_elbow_joint: 0
+  ursa_wrist_1_joint: -1.57
+  ursa_wrist_2_joint: 0
+  ursa_wrist_3_joint: 0
+
+

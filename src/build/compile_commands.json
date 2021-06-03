@@ -1,0 +1,187 @@
+[
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/ow_core",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ow_core\\\" -Dow_core_EXPORTS -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core -I/home/marco/ros/workspaces/final_project/src/build/utilities/ow_core  -g -fPIC   -std=c++11 -o CMakeFiles/ow_core.dir/src/conversions.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/ow_core/src/conversions.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/ow_core/src/conversions.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/ow_core",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ow_core\\\" -Dow_core_EXPORTS -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core -I/home/marco/ros/workspaces/final_project/src/build/utilities/ow_core  -g -fPIC   -std=c++11 -o CMakeFiles/ow_core.dir/src/math/reference_frames.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/ow_core/src/math/reference_frames.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/ow_core/src/math/reference_frames.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/object_server",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"object_server\\\" -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g   -o CMakeFiles/object_server_node.dir/src/Applications/object_server_node.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/object_server/src/Applications/object_server_node.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/object_server/src/Applications/object_server_node.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/object_server",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"object_server\\\" -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g   -o CMakeFiles/object_server_node.dir/src/object_server.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/object_server/src/object_server.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/object_server/src/object_server.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/object_server",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"object_server\\\" -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g   -o CMakeFiles/object_server_node.dir/src/object.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/object_server/src/object.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/object_server/src/object.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/object_server",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"object_server\\\" -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g   -o CMakeFiles/interactive_obstacle_node.dir/src/Applications/interactive_obstacle_node.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/object_server/src/Applications/interactive_obstacle_node.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/object_server/src/Applications/interactive_obstacle_node.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/object_server",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"object_server\\\" -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g   -o CMakeFiles/moving_obstacle_node.dir/src/Applications/moving_obstacle_node.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/object_server/src/Applications/moving_obstacle_node.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/object_server/src/Applications/moving_obstacle_node.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/object_server",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"object_server\\\" -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g   -o CMakeFiles/moving_obstacle_node.dir/src/object.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/object_server/src/object.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/object_server/src/object.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/object_server",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"object_server\\\" -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g   -o CMakeFiles/visual_markers_node.dir/src/Applications/visual_markers_node.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/object_server/src/Applications/visual_markers_node.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/object_server/src/Applications/visual_markers_node.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g   -o CMakeFiles/ur10_robot_model_node.dir/src/applications/ur10_robot_model_node.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/applications/ur10_robot_model_node.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/applications/ur10_robot_model_node.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/model_ur10.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/model_ur10.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/model_ur10.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/jacobians_p.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/jacobians_p.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/jacobians_p.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/jacobians.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/jacobians.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/jacobians.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/jacobians_t_p.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/jacobians_t_p.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/jacobians_t_p.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/jacobians_t.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/jacobians_t.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/jacobians_t.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/matrix_c.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/matrix_c.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/matrix_c.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/matrix_g.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/matrix_g.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/matrix_g.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/matrix_m.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/matrix_m.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/matrix_m.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/matrix_th.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/matrix_th.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/matrix_th.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/matrix_yr.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/matrix_yr.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/matrix_yr.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/ur10_robot_model",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ur10_robot_model\\\" -Dur10_robot_model_EXPORTS -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include  -g -fPIC   -o CMakeFiles/ur10_robot_model.dir/src/kinematics.cpp.o -c /home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/kinematics.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/ur10_robot_model/src/kinematics.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/tum_ics_ur10_controller_tutorial",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tum_ics_ur10_controller_tutorial\\\" -I/usr/include/tumtools -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/home/marco/ros/workspaces/final_project/src/build/tum_ics_ur10_controller_tutorial -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -w -Wno-cpp -O3 -O3 -DNDEBUG   -fPIC -std=gnu++11 -o CMakeFiles/testSimpleEffortCtrl.dir/src/Applications/testSimpleEffortCtrl.cpp.o -c /home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/src/Applications/testSimpleEffortCtrl.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/src/Applications/testSimpleEffortCtrl.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/tum_ics_ur10_controller_tutorial",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tum_ics_ur10_controller_tutorial\\\" -Dmy_robot_control_lli_EXPORTS -I/usr/include/tumtools -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/home/marco/ros/workspaces/final_project/src/build/tum_ics_ur10_controller_tutorial -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -w -Wno-cpp -O3 -O3 -DNDEBUG -fPIC   -fPIC -std=gnu++11 -o CMakeFiles/my_robot_control_lli.dir/src/SimpleEffortControl.cpp.o -c /home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/src/SimpleEffortControl.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/src/SimpleEffortControl.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/tum_ics_ur10_controller_tutorial",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tum_ics_ur10_controller_tutorial\\\" -Dmy_robot_control_lli_EXPORTS -I/usr/include/tumtools -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/home/marco/ros/workspaces/final_project/src/build/tum_ics_ur10_controller_tutorial -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -w -Wno-cpp -O3 -O3 -DNDEBUG -fPIC   -fPIC -std=gnu++11 -o CMakeFiles/my_robot_control_lli.dir/src/DefaultControl.cpp.o -c /home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/src/DefaultControl.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/src/DefaultControl.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/tum_ics_ur10_controller_tutorial",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tum_ics_ur10_controller_tutorial\\\" -Dmy_robot_control_lli_EXPORTS -I/usr/include/tumtools -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/home/marco/ros/workspaces/final_project/src/build/tum_ics_ur10_controller_tutorial -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -w -Wno-cpp -O3 -O3 -DNDEBUG -fPIC   -fPIC -std=gnu++11 -o CMakeFiles/my_robot_control_lli.dir/src/CartesianTrajectory.cpp.o -c /home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/src/CartesianTrajectory.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/src/CartesianTrajectory.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/tum_ics_ur10_controller_tutorial",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tum_ics_ur10_controller_tutorial\\\" -Dmy_robot_control_lli_EXPORTS -I/usr/include/tumtools -I/usr/include/eigen3 -I/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/home/marco/ros/workspaces/final_project/src/ur10_robot_model/include -I/home/marco/ros/workspaces/final_project/src/utilities/ow_core/include -I/home/marco/ros/workspaces/final_project/src/utilities/object_server/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/home/marco/ros/workspaces/final_project/src/build/tum_ics_ur10_controller_tutorial -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -w -Wno-cpp -O3 -O3 -DNDEBUG -fPIC   -fPIC -std=gnu++11 -o CMakeFiles/my_robot_control_lli.dir/src/StateMachine.cpp.o -c /home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/src/StateMachine.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/tum_ics_ur10_controller_tutorial/src/StateMachine.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/rviz_camera_stream",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"rviz_camera_stream\\\" -Drviz_camera_stream_EXPORTS -I/home/marco/ros/workspaces/final_project/src/utilities/rviz_camera_stream/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g -fPIC   -fPIC -std=gnu++11 -o CMakeFiles/rviz_camera_stream.dir/src/camera_display.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/rviz_camera_stream/src/camera_display.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/rviz_camera_stream/src/camera_display.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/rviz_camera_stream",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"rviz_camera_stream\\\" -Drviz_camera_stream_EXPORTS -I/home/marco/ros/workspaces/final_project/src/utilities/rviz_camera_stream/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g -fPIC   -fPIC -std=gnu++11 -o CMakeFiles/rviz_camera_stream.dir/include/rviz_camera_stream/moc_camera_display.cpp.o -c /home/marco/ros/workspaces/final_project/src/build/utilities/rviz_camera_stream/include/rviz_camera_stream/moc_camera_display.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/build/utilities/rviz_camera_stream/include/rviz_camera_stream/moc_camera_display.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/visual_perception",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"visual_perception\\\" -I/home/marco/ros/workspaces/final_project/src/utilities/visual_perception/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/opencv  -g   -std=c++11 -o CMakeFiles/visual_perception_node.dir/src/Application/visual_perception_node.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/visual_perception/src/Application/visual_perception_node.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/visual_perception/src/Application/visual_perception_node.cpp"
+},
+{
+  "directory": "/home/marco/ros/workspaces/final_project/src/build/utilities/visual_perception",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"visual_perception\\\" -I/home/marco/ros/workspaces/final_project/src/utilities/visual_perception/include -I/home/marco/ros/workspaces/final_project/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/opencv  -g   -std=c++11 -o CMakeFiles/visual_perception_node.dir/src/visual_perception.cpp.o -c /home/marco/ros/workspaces/final_project/src/utilities/visual_perception/src/visual_perception.cpp",
+  "file": "/home/marco/ros/workspaces/final_project/src/utilities/visual_perception/src/visual_perception.cpp"
+}
+]

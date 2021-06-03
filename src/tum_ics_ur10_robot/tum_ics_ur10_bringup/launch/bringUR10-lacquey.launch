@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="load_robot_description" default="true"/>
+    <arg name="joint_limited" default="false"/>
+    <arg name="robot_prefix" default="ursa_"/>
+    <arg name="gui" default="false"/>
+    <arg name="list" default="[$(arg robot_prefix)joint_states, $(arg robot_prefix)finger_joint_states]"/>
+
+    <!-- The name of the parameter under which the URDF is loaded -->
+    <arg name="robot_description" default="robot_description"/>
+
+    <!-- Load universal robot description format (URDF) -->
+    <group if="$(arg load_robot_description)">
+        <param name="$(arg robot_description)" command="$(find xacro)/xacro --inorder '$(find tum_ics_ur10_description)/urdf/ur10_robot_lacquey.urdf.xacro' prefix:=$(arg robot_prefix) limited:=$(arg joint_limited)" />
+    </group>
+
+    <!--include file="$(find tum_ics_ur10_description)/robots/upload_ur10.launch" /-->
+
+    <!-- loading the Park position as TOM zero position -->
+    <rosparam command="load" file="$(find tum_ics_ur10_description)/robots/$(arg robot_prefix)ur10_zeros.yaml"/>
+
+
+    <node name="joint_state_publisher_ur10" pkg="joint_state_publisher" type="joint_state_publisher" >
+      <param name="use_gui" value="$(arg gui)"/>
+                <!--remap from="/joint_states" to="/joint_cmd"/-->
+<!--      <rosparam param="source_list">[$(arg robot_prefix)joint_states, $(arg robot_prefix)fingers_joint_states]</rosparam>-->
+<!--      <rosparam unless="$(arg gui)" param="source_list" subst_value="True">$(arg list)</rosparam>-->
+      <rosparam unless="$(arg gui)" param="source_list" subst_value="True">[$(arg robot_prefix)joint_states, $(arg robot_prefix)fingers_joint_states]</rosparam>
+
+      <!--rosparam param="source_list">[ur10_arm_joint_states]</rosparam-->
+
+    </node>
+    <node name="robot_state_publisher_ur10" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <!--node name="rviz" pkg="rviz" type="rviz" args="-d $(find tum_ics_ur10_description)/launch/rviz_conf/$(arg robot_prefix)robot_ur10.rviz" /-->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find tum_ics_ur10_description)/launch/rviz_conf/robot_ur10.rviz" />
+</launch>

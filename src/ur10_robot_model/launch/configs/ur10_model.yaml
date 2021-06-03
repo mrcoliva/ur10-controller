@@ -1,0 +1,36 @@
+ur10_model:
+
+  # robot 0 frame wrt base
+  robot_0_frame: 'base_frame'
+
+  # world frame
+  base_frame: 'world'
+  X_0_B: [0, 0, 0, 0, 0, 1, 0]            # Pose6d [px, py, pz, x y z w]
+
+  # robot tool wrt ef (just a shift in z axis)
+  tool_frame: 'tool_frame'
+  X_Tool_Ef: [0, 0, 0.14, 0, 0, 0, 1]     # Pose6d [px, py, pz, x y z w]
+
+  # topic names for joints
+  joint_topic: '/ursa_joint_states'
+  joint_names: [
+    'ursa_shoulder_pan_joint',
+    'ursa_shoulder_lift_joint',
+    'ursa_elbow_joint',
+    'ursa_wrist_1_joint',
+    'ursa_wrist_2_joint',
+    'ursa_wrist_3_joint',
+  ]
+
+  # gravity wrt world
+  gx: 0.0
+  gy: 0.0
+  gz: -9.81   # gravity is flipped!
+
+  # link length
+  L1: 0.128
+  L2: -0.6121
+  L3: -0.5716
+  L4: 0.1639
+  L5: 0.1157
+  L6: 0.0922

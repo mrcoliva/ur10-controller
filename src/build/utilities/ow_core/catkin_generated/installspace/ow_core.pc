@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: ow_core
+Description: Description of ow_core
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -low_core
+Requires: roscpp tf tf_conversions ow_msgs

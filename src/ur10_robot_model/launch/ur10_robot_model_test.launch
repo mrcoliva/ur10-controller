@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- my robot model -->
+  <rosparam file="$(find ur10_robot_model)/launch/configs/ur10_model.yaml" command="load" />
+
+  <!-- the controller -->
+  <node name="ur10_robot_model_node" pkg="ur10_robot_model" type="ur10_robot_model_node" output="screen"/>
+
+</launch>

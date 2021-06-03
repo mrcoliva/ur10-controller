@@ -1,0 +1,2 @@
+set(ow_msgs_MESSAGE_FILES "/home/marco/ros/workspaces/final_project/src/utilities/ow_msgs/msg/AngularState.msg;/home/marco/ros/workspaces/final_project/src/utilities/ow_msgs/msg/CartesianState.msg;/home/marco/ros/workspaces/final_project/src/utilities/ow_msgs/msg/JointState.msg;/home/marco/ros/workspaces/final_project/src/utilities/ow_msgs/msg/LinearState.msg;/home/marco/ros/workspaces/final_project/src/utilities/ow_msgs/msg/Vector.msg")
+set(ow_msgs_SERVICE_FILES "")
