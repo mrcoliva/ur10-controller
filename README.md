@@ -1,6 +1,6 @@
 # UR10 Robot Controller in ROS
 
-##### An adaptive controller for simoultaneous trajectory following, gaze control, and collision avoidance with moving obstacles.
+#### An adaptive controller for simoultaneous trajectory following, gaze control, and collision avoidance with moving obstacles.
 
 Three control laws are applied: a joint space controller for the initial motion from the singular position into the start position, a Cartesian space controller to follow the circular trajectory, to control the orientation towards the targets and to move along trajectories back to the circular path after being diverted due to nearby obstacles. An impedance controller is used to avoid collisions with obstacles.
 
