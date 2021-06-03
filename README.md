@@ -19,5 +19,4 @@ For a more detailed theoretical introduction and documentation of the system, se
 https://user-images.githubusercontent.com/11507299/120662500-7fe1cc00-c489-11eb-9984-186d0c105838.mp4
 
 #### Simoultaneous collision avoidance with up to three mobing obstacles
-https://user-images.githubusercontent.com/11507299/120660688-de0daf80-c487-11eb-9f90-0c6a716abd1f.mp4
-
+Uploading collision_avoidance.mp4…
