@@ -2,7 +2,7 @@
 
 ### An adaptive controller for simultaneous trajectory following, gaze control, and collision avoidance with moving obstacles.
 
-The task of the robot has three components:
+The task of the robot has four components:
 1. move to a starting position in joint space
 2. follow a circular trajectory with the end-effector
 3. always keep the end-effector oriented towards the currently active visual target on the floor
