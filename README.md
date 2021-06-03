@@ -13,7 +13,7 @@ To achive this behaviour, three control laws are applied:
 * a Cartesian space controller to follow the circular trajectory, to control the orientation towards the targets and to move along trajectories back to the circular path after being diverted due to nearby obstacles
 * an impedance controller is used to avoid collisions with obstacles.
 
-For a more detailed theoretical introduction and documentation of the system, see the report.
+For a more detailed theoretical introduction and documentation of the system, see the [report](https://github.com/mrcoliva/ur10-controller/blob/main/Report.pdf).
 
 ### How to run the controller
 To run the controller, perform the following steps:
