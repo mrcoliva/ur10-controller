@@ -8,7 +8,7 @@ The task of the robot has four components:
 3. always keep the end-effector oriented towards the currently active visual target on the floor
 4. avoid collisions with the moving objects
 
-To achive this behaviour, three control laws are applied:
+To achieve this behaviour, three control laws are applied:
 * a joint space controller for the initial motion from the singular position into the start position
 * a Cartesian space controller to follow the circular trajectory, to control the orientation towards the targets and to move along trajectories back to the circular path after being diverted due to nearby obstacles
 * an impedance controller is used to avoid collisions with obstacles.
