@@ -16,6 +16,9 @@ To achieve this behaviour, three control laws are applied:
 For a more detailed theoretical introduction and documentation of the system, see the [report](https://github.com/mrcoliva/ur10-controller/blob/main/Report.pdf).
 
 ### How to run the controller
+
+For reference, code for the controller is [here](https://github.com/mrcoliva/ur10-controller/blob/main/src/tum_ics_ur10_controller_tutorial/src/DefaultControl.cpp).
+
 To run the controller, perform the following steps:
 1. build the workspace: `catkin_make`
 2. start the simulator: `roslaunch tum_ics_ur10_bringup bringUR10-simulator.launch`
